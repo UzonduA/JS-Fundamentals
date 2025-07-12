@@ -7,13 +7,15 @@
     You are not allowed to use var
 */
 
-const arg = process.argv;
+let count = 0;
+for(let a = 2; a < process.argv; a++)
+     {count++};
 if(
-    arg <= 2){
+    count === 0){
         console.log("No argument");
     }
 else if(
-    arg === 3){
+    count === 1){
         console.log("Argument found");
     }
    else{console.log("Arguments found");}
