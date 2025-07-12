@@ -8,7 +8,7 @@
 */
 
 let count = 0;
-for(let a = 2; a < process.argv; a++)
+for(let a = 2; a < process.argv.length; a++)
      {count++};
 if(
     count === 0){
