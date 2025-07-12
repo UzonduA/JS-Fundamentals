@@ -6,7 +6,7 @@ if(firstArgument)
     }
 else
 {
-    console.log("No Argument");
+    console.log("No argument");
 
 }
  
