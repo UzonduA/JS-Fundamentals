@@ -9,11 +9,11 @@
 
 const arg = process.argv;
 if(
-    arg === 0){
+    arg <= 2){
         console.log("No argument");
     }
 else if(
-    arg === 1){
+    arg === 3){
         console.log("Argument found");
     }
    else{console.log("Arguments found");}
