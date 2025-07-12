@@ -3,16 +3,13 @@ initialized an empty string to collect all lines as we would need only one conso
 Then I used a for loop to go through each, then added  the current message to the output string, 
 followed by a newline. And finally printed the output using a single console.log
 */
-const messages = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
+const messages = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 let output = '';
 
 for (let i = 0; i < messages.length; i++) {
-  result += messages[i];
+  output += messages[i] + (i < messages.length - 1 && '\n' || '');
 }
 
-if (i < messages.length - 1) {
-    result += '\n';
-  }
-
 console.log(output);
+
