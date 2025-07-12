@@ -8,19 +8,18 @@ const count = parseInt(input);
 if (isNaN(count)) {
   // Print error message if input is invalid
   console.log('Missing number of occurrences');
-} else {
-  // Initialize an empty string to collect the output
+} // Only if count is positive, print "C is fun" count times
+else if (count > 0) {
   let output = '';
-
-  // Initialize counter for the loop
   let i = 0;
 
-  // Loop count times to add "C is fun" lines
+  // Loop count times
   while (i < count) {
-    output += 'C is fun\n';  // Add the line with a newline
+    output += 'C is fun\n';
     i++;
   }
 
-  // Print all lines at once
-  console.log(output.trim());  // trim() removes the last extra newline
+  // Print all lines at once, removing the last newline
+  console.log(output.trim());
 }
+// If count is zero or negative, print nothing (no console.log)
